@@ -1,5 +1,36 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-
 body{
-    background: white;
+    background: green;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+#body-carta{
+    padding-top: 100px;
+    /* min-height: 100vh; */
+    /* min-width: 100vw; */
+}
+#carta{
+    height: 530px;
+    width: 350px;
+    border-radius: 10px;
+}
+#header{
+    color:black ;
+    font-size: 90px;
+    margin: 20px;
+
+}
+#body{
+    font-size: 120px;
+}
+#footer{
+    color: black;
+    font-size: 90px;
+    margin: 20px;
+    transform: rotate(180deg);
+}
+#nvar{
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
 }
