@@ -37,17 +37,33 @@ window.onload = function () {
   }
   document.querySelector("#btn").addEventListener("click", refrescarPagina);
 
-  function cambiarTamañoCarta() {
-    let iHeight = document.querySelector("#i-height").value;
-    let iWidth = document.querySelector("#i-width").value;
+  const rangerWidth = this.document.querySelector("#rWidth");
+  const rangerHeight = this.document.querySelector("#rHeight");
+  const carta = this.document.querySelector("#carta");
 
-  if (iHeight) {
-    carta.style.height = iHeight + "px";
-  }
-  if (iWidth) {
-    carta.style.width = iWidth + "px";
-  }
-  }
-  this.document.querySelector("#i-height").addEventListener("input", cambiarTamañoCarta);
-  this.document.querySelector("#i-width").addEventListener("input", cambiarTamañoCarta);
+  rangerWidth.addEventListener("input", function () {
+    let nuevoTamaño = rangerWidth.value;
+    carta.style.width = nuevoTamaño + "px";
+    carta.style.fontSize = (nuevoTamaño / 350 * 16) + "px";
+  })
+
+  rangerHeight.addEventListener("input", function () {
+    let nuevoTamaño = rangerHeight.value;
+    carta.style.height = nuevoTamaño + "px";
+    carta.style.fontSize = (nuevoTamaño / 530 * 16) + "px";
+  })
+
+  // function cambiarTamañoCarta() {
+  //   let iHeight = document.querySelector("#i-height").value;
+  //   let iWidth = document.querySelector("#i-width").value;
+
+  // if (iHeight) {
+  //   carta.style.height = iHeight + "px";
+  // }
+  // if (iWidth) {
+  //   carta.style.width = iWidth + "px";
+  // }
+  // }
+  // this.document.querySelector("#i-height").addEventListener("input", cambiarTamañoCarta);
+  // this.document.querySelector("#i-width").addEventListener("input", cambiarTamañoCarta);
 }

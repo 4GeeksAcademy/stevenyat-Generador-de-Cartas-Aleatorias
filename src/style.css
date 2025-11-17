@@ -1,36 +1,48 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 body{
-    background: green;
+    background-image: url('/workspaces/stevenyat-Generador-de-Cartas-Aleatorias/src/assets/img/bg-casino.jpeg');
     min-height: 100vh;
     min-width: 100vw;
 }
 #body-carta{
-    padding-top: 100px;
+    /* padding-top: 100px; */
     /* min-height: 100vh; */
     /* min-width: 100vw; */
 }
 #carta{
-    height: 530px;
     width: 350px;
+    height: 530px;
     border-radius: 10px;
+    font-size: 16px;
+    overflow: hidden;
+        background: rgba(255, 255, 255, 0.9);
+
 }
 #header{
     color:black ;
-    font-size: 90px;
-    margin: 20px;
+    font-size: 5.6em;
+    margin: 0.35em;
 
 }
 #body{
-    font-size: 120px;
+    font-size: 7.5em;
+    
 }
 #footer{
     color: black;
-    font-size: 90px;
-    margin: 20px;
+    font-size: 5.6em;
+    margin: 0.35em;
     transform: rotate(180deg);
 }
 #nvar{
+    color: red;
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    width: fit-content;
+}
+#btn button{
+    font-size: 1.5em;
+    color: red;
+    border-color: white;
 }
