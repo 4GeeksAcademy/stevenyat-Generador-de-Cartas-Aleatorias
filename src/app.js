@@ -53,6 +53,17 @@ window.onload = function () {
     carta.style.fontSize = (nuevoTamaño / 530 * 16) + "px";
   })
 
+  const temporizador = this.document.querySelector("#temporizador");
+
+  let temporizadorInterval = setInterval(() => {
+    let tiempoActual = parseInt(temporizador.textContent);
+    temporizador.textContent = tiempoActual -1
+    if (tiempoActual === 1) {
+      clearInterval(temporizadorInterval);
+      refrescarPagina();
+    }
+  }, 1000);
+
   // function cambiarTamañoCarta() {
   //   let iHeight = document.querySelector("#i-height").value;
   //   let iWidth = document.querySelector("#i-width").value;
